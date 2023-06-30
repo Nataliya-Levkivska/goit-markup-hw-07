@@ -27,6 +27,11 @@
                 <a class="menu-item-link link" href="">Contacts</a></li>
         </ul>
         </nav>
+        <button type="button" class="mobile-menu-open-btn js-open-menu" aria-expanded="false">
+            <svg class="mobile-menu-open-btn-icon" width="32" height="22"> 
+            <use href="./images/icons.svg#icon-burger"></use>
+            </svg>    
+        </button>
         <address class="contacts">
         <ul class="contacts-list list">
             <li class="menu-item">
@@ -35,6 +40,68 @@
                 <a class="contacts-item-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
         </address>
+        </div>
+        <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn js-close-menu">
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+                <a class="mobile-list-item curent link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item list">
+                <a class="mobile-list-item curent link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item list">
+                <a class="mobile-list-item curent link" href="">Contacts</a>
+            </li>
+        </ul>
+        <div class="mobile-contact-container">
+        <address class="mobile-address">
+            <ul class="mobile-contact list">
+                <li>
+                <a class="mobile-contact-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li>
+                <a class="mobile-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+            <ul class="mobile-social-list">
+                <li class="mobile-social-item list">
+                    <a href="" class="mobile-social-link link">
+                        <svg class="mobile-social-icon" width="24" height="24">
+                            <use href=".images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-item list">
+                    <a href="" class="mobile-social-link link">
+                        <svg class="mobile-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-item list">
+                    <a href="" class="mobile-social-link link">
+                        <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-item list">
+                <a href="" class="mobile-social-link link">
+                    <svg class="mobile-social-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+                </li>
+            </ul>
+        </div>
+        </div>
         </div>
     </header>
     <!--Main section-->
@@ -46,6 +113,7 @@
         <button class="modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
         </section>
+    
     <!--Section two-->
         <section class="strategy">
             <div class="container">
@@ -92,7 +160,7 @@ problem to walk away with the perfect and creative solution.</p>
             </div>
         </section>
     <!--Section three-->
-        <section class="service">
+            <section class="service">
             <div class="container">
             <h2 class="title-service">What are we doing</h2>
             <ul class="service-list list">
@@ -104,7 +172,7 @@ problem to walk away with the perfect and creative solution.</p>
         </section>
     <!--Section four-->
         <section class="team">
-            <div class="container">          
+            <div class="container team-section-container">          
             <h2 class="title-team">Our Team</h2>
             <ul class="team-list list">
                 <li class="team-list-item">
@@ -447,5 +515,6 @@ problem to walk away with the perfect and creative solution.</p>
     </div>
 </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
